@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="robots" content="noindex" />
+    <meta
+      name="description"
+      content="The international space station is orbiting the earth at close to 28,000 km/h. But where is it right now?"
+    />
+    <title>Where is the ISS? - Find out here!</title>
+    <link rel="stylesheet" href="./css/normalize.css" />
+    <link rel="stylesheet" href="./css/styles.css" />
+  </head>
+  <body>
+    <nav class="nav">
+      <label for="toggle">&#9776;</label>
+      <input type="checkbox" id="toggle" />
+      <div class="menu">
+        <a class="active" href="index.html">Home</a>
+        <a href="locate.html">Locate</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+      </div>
+    </nav>
+
+    <div class="video-background">
+      <video
+        src="./video/iss.mp4"
+        autoplay
+        loop
+        muted
+        preload="auto"
+      >
+        Sorry, your browser does not support video
+      </video>
+
+      <div class="pattern"></div>
+
+      <div id="hero-section">
+        <div>
+          <h1>Where is the ISS?</h1>
+
+          <div class="p-container"></div>
+
+          <a class="button" href="locate.html">Find out</a>
+        </div>
+      </div>
+    </div>
+
+    <script src="./js/index.js"></script>
+  </body>
+</html>

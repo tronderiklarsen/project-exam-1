@@ -1,0 +1,405 @@
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@300;400&family=Quattrocento&display=swap");
+
+* {
+  font-size: 10px;
+  font-family: "Oswald", sans-serif;
+  color: white;
+}
+
+body {
+  min-width: 320px;
+  max-width: 1920px;
+  background-color: black;
+}
+
+.nav label {
+  font-size: 5rem;
+  line-height: 50px;
+  margin: 0 8px 0 0;
+  display: block;
+  width: 50px;
+  float: right;
+}
+
+#toggle {
+  display: none;
+}
+
+#toggle:checked + .menu {
+  display: block;
+}
+
+.nav {
+  position: relative;
+  text-align: right;
+  z-index: 100;
+  height: 5rem;
+  line-height: 5rem;
+}
+
+.menu {
+  display: none;
+}
+
+.menu a {
+  clear: right;
+  background-color: #ff8a00;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: 300;
+  font-size: 2rem;
+  line-height: 5rem;
+  text-align: center;
+  display: block;
+  border-bottom: 0.5px solid black;
+  color: black;
+}
+
+.video-background {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.video-background:after {
+  width: 100%;
+  height: 100%;
+  content: "";
+  position: absolute;
+  z-index: 10;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.3);
+}
+
+.video-background video {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 5;
+  object-fit: cover;
+}
+
+.pattern {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 15;
+  background-image: url("../img/pattern.png");
+  opacity: 50%;
+}
+
+#hero-section {
+  position: relative;
+  z-index: 20;
+  width: 300px;
+}
+
+#hero-section h1 {
+  text-transform: uppercase;
+  font-size: 8rem;
+  font-weight: 300;
+  line-height: 8rem;
+  margin-top: 64px;
+}
+
+.p-container p {
+  font-family: "Quattrocento", serif;
+  font-size: 1.8rem;
+  line-height: 1.8rem;
+  margin-bottom: 48px;
+}
+
+.button {
+  background-color: #ff8a00;
+  color: black;
+  padding: 1rem 5rem;
+  border-radius: 3px;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 2.5rem;
+  font-weight: 300;
+}
+
+.button:hover {
+  border: 1px solid #ff8a00;
+}
+
+#about-section {
+  margin: 32px 16px 32px 16px;
+}
+
+#about-section h1, h2 {
+  font-size: 2.5rem;
+  margin-bottom: 32px;
+  font-weight: 300;
+  text-decoration: underline;
+  text-decoration-color: white;
+}
+
+#about-section p {
+  font-family: "Quattrocento", serif;
+  font-size: 1.8rem;
+  margin-bottom: 32px;
+}
+
+.contact-wrapper h1, h2 {
+  font-size: 2.5rem;
+  font-weight: 300;
+  text-decoration: underline;
+  text-decoration-color: white;
+}
+
+#contact-section h2 {
+  margin-top: 64px;
+}
+
+#contact-section {
+  margin: 32px 16px 32px 16px;
+}
+
+#contact-section label {
+  display: block;
+  margin-bottom: 8px;
+  font-family: "Quattrocento", serif;
+  font-size: 1.8rem;
+  font-weight: 300;
+}
+
+input {
+  display: block;
+  margin-bottom: 8px;
+  width: 100%;
+  height: 30px;
+  background-color: white;
+  color: black;
+  font-size: 1.5rem;
+  font-family: "Quattrocento", serif;
+}
+
+textarea {
+  margin-bottom: 8px;
+  width: 100%;
+  background-color: white;
+  height: 200px;
+  color: black;
+  font-size: 1.5rem;
+  font-family: "Quattrocento", serif;
+}
+
+.submit-button {
+  background-color: #ff8a00;
+  color: black;
+  padding: 1rem 5rem;
+  border-radius: 3px;
+  text-transform: uppercase;
+  font-size: 2.5rem;
+  font-weight: 300;
+  height: 55px;
+  width: 169px;
+  border: 1px solid black;
+  font-family: "Oswald", sans-serif;
+}
+
+.submit-button:hover {
+  border: 1px solid #ff8a00;
+}
+
+.form-error {
+  margin: 4px 0 8px 0;
+  background-color: #FF6262;
+  border-radius: 3px;
+  color: black;
+  font-size: 1.5rem;
+  font-family: "Quattrocento", serif;
+  display: none;
+  padding: 8px 8px 8px 8px;
+}
+
+footer {
+  text-align: center;
+  font-weight: 300;
+  font-size: 1rem;
+  padding: 8px 0 8px 0;
+  margin-top: 64px;
+}
+
+.locate-content {
+  margin: 32px 16px 32px 16px;
+}
+
+.locate-content h1 {
+  font-size: 2.5rem;
+  font-weight: 300;
+  text-decoration: underline;
+  text-decoration-color: white;
+}
+
+.locate-content p {
+  font-size: 1.8rem;
+  font-weight: 300;
+  font-family: "Quattrocento", serif;
+  text-align: center;
+  margin-top: 32px;
+}
+
+.social-section {
+  margin: 64px 16px 16px 16px;
+}
+
+.social-link a {
+  font-family: "Quattrocento", serif;
+  font-size: 1.5rem;
+}
+
+.social-link {
+  margin-top: 8px;
+}
+
+.social-link a:hover {
+  color: #ff8a00;
+}
+
+ion-icon {
+  font-size: 4.8rem;
+  margin-right: 8px;
+}
+
+ion-icon:hover {
+  color: #ff8a00;
+}
+
+#mapid {
+  height: 400px;
+  z-index: 15;
+}
+
+/* tablet portrait */
+
+@media only screen and (min-width: 768px) {
+  .nav label {
+    display: none;
+  }
+
+  nav {
+    text-align: right;
+    padding: 8px 16px 0 0;
+  }
+
+  .menu {
+    display: contents;
+  }
+
+  .menu a {
+    display: inline;
+    color: white;
+    background-color: rgba(0, 0, 0, 0);
+    padding: 0 1rem 0 0;
+    border-bottom: none;
+  }
+
+  .menu a:hover {
+    text-decoration: underline;
+    text-decoration-color: #ff8a00;
+  }
+
+  .menu .active {
+    color: #ff8a00;
+  }
+
+  #hero-section {
+    width: 450px;
+  }
+
+  #hero-section h1 {
+    font-size: 11rem;
+    line-height: 11rem;
+    margin-top: 136px;
+  }
+
+  .p-container p {
+    font-size: 2.5rem;
+    line-height: 3rem;
+    margin-bottom: 64px;
+  }
+
+  .locate-wrapper {
+    height: 100vh;
+  }
+
+  .locate-content {
+    width: 500px;
+    margin: 0 auto;
+    margin-top: 64px;
+  }
+
+  .about-wrapper {
+    height: 100vh;
+  }
+
+  #about-section {
+    width: 500px;
+    margin: 0 auto;
+    margin-top: 64px;
+  }
+
+  .contact-wrapper {
+    height: 100vh;
+  }
+
+  #contact-section {
+    width: 500px;
+    margin: 0 auto;
+    margin-top: 64px;
+  }
+
+  .social-section {
+    width: 500px;
+    margin: 0 auto;
+    margin-top: 64px;
+  }
+}
+
+/* tablet landscape */
+
+@media only screen and (min-width: 1024px) {
+  #hero-section h1 {
+    margin-top: 64px;
+  }
+
+  .locate-content {
+    width: 750px;
+  }
+
+  #about-section {
+    width: 750px;
+  }
+
+  #contact-section {
+    width: 750px;
+  }
+
+  textarea {
+    height: 75px;
+  }
+
+  .social-section {
+    width: 750px;
+  }
+}
+
+/* desktop */
+@media only screen and (min-width: 1280px) {
+  #hero-section {
+    margin-top: 24px;
+  }
+
+  textarea {
+    height: 120px;
+  }
+}
